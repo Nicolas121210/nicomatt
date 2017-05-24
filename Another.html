@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            background: yellow;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .p1 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: red;
+        }
+        .change .p1 {
+            position: absolute;
+            left: 50px;
+        }
+        button {
+            position: absolute;
+            top: 500px;
+            
+        }
+    </style>
+    
+    <div class="container" >
+        <div class="p1" onclick="move(this)"></div>
+    </div>
+    <button onclick="move(this)"></button>
+    <script>
+        function move(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+
+</html>

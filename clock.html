@@ -1,0 +1,69 @@
+<style>
+    .bar1  .bar3  {
+        width: 10px;
+        height: 50px;
+        background: #333;
+        transition: 0.4s;
+        opacity: 0;
+    }
+    .bar1 {
+        opacity: 100;
+    }
+    .bar2 .bar4 {
+        width: 50px;
+        height: 10px;
+        background: #333;
+        transition: 0.4s;
+        opacity: 0;
+        position: absolute;
+    }
+    .bar2 {
+        top: 70px;
+        left: 90px;
+    }
+    .change .bar1 {
+        opacity: 0;
+    }
+    .change .bar2 {
+        opacity: 100;
+    }
+    .change1 .bar2 {
+        opacity: 0;
+    }
+    .change1 .bar3 {
+        opacity: 100;
+    }
+    .change2 .bar3 {
+        opacity: 0;
+    }
+    .change2 .bar4 {
+        opacity: 100;
+    }
+    .change3 .bar4 {
+        opacity: 0;
+    }
+    .change3 .bar1 {
+        opacity: 100;
+    }
+</style>
+<center>
+<div class="container" onclick="myF(thing)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+<div class="bar4"></div>
+</div>
+</center>
+<script>
+function myF(x) {
+    var num = 1;
+    while (num == 1) {
+        setTimeout(function() {
+            x.classList.toggle("change");
+        }, 2000);
+        setTimeout(function() {
+            x.classList.toggle("change1");
+        }, 2000);
+    }
+}
+</script>

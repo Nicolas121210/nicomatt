@@ -1,0 +1,73 @@
+<style>
+    div {
+        width: 10%;
+        height: 100%;
+        animation-name: example;
+        background: red;
+        animation-delay: 0s;
+        animation-duration: 5s;
+        position: absolute;
+        left: -30%;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        
+    }
+    div1 {
+        width: 10%;
+        height: 100%;
+        animation-name: example1;
+        background: red;
+        animation-delay: 0s;
+        animation-duration: 5s;
+        position: absolute;
+        right: -30%;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        
+    }
+    div2 {
+        width: 10%;
+        height: 10%;
+        animation-name: example2;
+        background: red;
+        animation-timing-function: ease-out; 
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
+        animation-play-state: running;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+    }
+    @keyframes example2 {
+        0% {
+            background: red;
+            border-radius: 0px;
+        }
+        50% {
+            background: orange;
+            border-radius: 30px;
+            width: 20%;
+            height: 20%;
+        }
+        100% {
+            background: yellow;
+            border-radius: 60px;
+            width: 40%;
+            height: 40%;
+        }
+    }
+    @keyframes example {
+        0% {background: red; width: 10%; border-radius: 0px; }
+        
+        100% {background: yellow; width: 80%; border-radius: 100000px;}
+    }
+    @keyframes example1 {
+        0% {background: red; width: 10%; border-radius: 0px; }
+        100% {background: yellow; width: 80%; border-radius: 100000px;}
+    }
+</style>
+<head>
+    <div><center><b></b></center></div>
+    <div1><center><b></b></center></div1>
+    <div2></div2>
+</head>
